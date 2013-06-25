@@ -7,12 +7,17 @@
 //
 
 #import "MSDAppDelegate.h"
+#import "UGConnection.h"
 
 @implementation MSDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UGConnection *connection = [UGConnection sharedConnection];
+    connection.organization = @"mdobson";
+    connection.application = @"goalsetter";
+    
     return YES;
 }
 							

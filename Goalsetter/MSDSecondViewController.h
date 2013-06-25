@@ -10,4 +10,10 @@
 
 @interface MSDSecondViewController : UIViewController
 
+@property (nonatomic,retain) IBOutlet UITextField *goalField;
+@property (nonatomic,retain) IBOutlet UITextField *startField;
+@property (nonatomic,retain) IBOutlet UITextField *endField;
+
+-(IBAction)createGoal:(id)sender;
+
 @end
